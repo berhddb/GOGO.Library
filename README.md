@@ -949,9 +949,9 @@ local function Hide(notify: boolean?)
 	Debounce = true
 	if notify then
 		if useMobilePrompt then 
-			RayfieldLibrary:Notify({Title = "Interface Hidden", Content = "The interface has been hidden, you can unhide the interface by tapping 'Show Rayfield'.", Duration = 7, Image = 4400697855})
+			RayfieldLibrary:Notify({Title = "UI Desativada", Content = "A UI foi desativada, para ativar novamente clique no botão 'Show GOGO'.", Duration = 7, Image = 4400697855})
 		else
-			RayfieldLibrary:Notify({Title = "Interface Hidden", Content = "The interface has been hidden, you can unhide the interface by tapping K.", Duration = 7, Image = 4400697855})
+			RayfieldLibrary:Notify({Title = "UI Desativada", Content = "A UI foi desativada, para ativar novamente clique na tecla K.", Duration = 7, Image = 4400697855})
 		end
 	end
 
@@ -1308,7 +1308,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 				task.wait(math.random(180, 600))
 				RayfieldLibrary:Notify({
 					Title = "GOGO HUB",
-					Content = "Enjoying this script? Like us in the discord for updates!",
+					Content = "Obrigado por usar nosso script! deixe seu feedback no nosso servidor do discord.",
 					Duration = 7,
 					Image = 4370033185,
 				})
@@ -3019,8 +3019,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 					TweenService:Create(Slider, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {BackgroundColor3 = Color3.fromRGB(85, 0, 0)}):Play()
 					TweenService:Create(Slider.UIStroke, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {Transparency = 1}):Play()
 					Slider.Title.Text = "Callback Error"
-					print("Rayfield | "..SliderSettings.Name.." Callback Error " ..tostring(Response))
-					warn('Check docs.sirius.menu for help with Rayfield specific development.')
+					print("GOGO HUB | "..SliderSettings.Name.." Callback Error " ..tostring(Response))
 					task.wait(0.5)
 					Slider.Title.Text = SliderSettings.Name
 					TweenService:Create(Slider, TweenInfo.new(0.6, Enum.EasingStyle.Exponential), {BackgroundColor3 = SelectedTheme.ElementBackground}):Play()
